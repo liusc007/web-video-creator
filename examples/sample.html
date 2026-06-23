@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920,height=1080">
+<title>Sample Scene</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: white;
+    overflow: hidden;
+  }
+  h1 { font-size: 72px; margin-bottom: 30px; opacity: 0; animation: fadeIn 1s ease 0.2s forwards; }
+  p { font-size: 28px; color: #aaa; opacity: 0; animation: fadeIn 1s ease 0.8s forwards; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+  <h1>Hello, 网页视频!</h1>
+  <p>HTML to Video · Playwright + FFmpeg</p>
+</body>
+</html>
