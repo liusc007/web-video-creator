@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Testing & caches
+.pytest_cache/
+.coverage
+htmlcov/
+test_out.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated media & preview artifacts
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.aac
+*.mp3
+*.wav
+preview_*.html
+temp_*/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
