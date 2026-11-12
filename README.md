@@ -13,6 +13,12 @@
 
 [English](README.md) · [简体中文](README_ZH.md) · [AI Post-Production Field Guide](docs/AI_POST_PRODUCTION_GUIDE.md)
 
+<br/><br/>
+
+<img src="docs/assets/comparison-demo.gif" alt="Prompting AI Video Directly vs web-video-creator Three-Tier Post-Production" width="100%" />
+
+<sub>Generated end-to-end by <a href="examples/generate_showcase.py"><code>examples/generate_showcase.py</code></a> using <code>HTMLToVideo</code>, <code>CCTVScene</code>, and <code>TimedSubtitleScene</code>.</sub>
+
 </div>
 
 ---
@@ -166,6 +172,10 @@ asyncio.run(main())
 
 ## Built-in Presets
 
+<p align="center">
+  <img src="docs/assets/presets-showcase.png" alt="Built-in Overlay Presets: CCTVScene, CyberHUDScene, HUDScene & Word-Level TimedSubtitleScene" width="100%" />
+</p>
+
 - **Overlay Scenes:** `CCTVScene`, `CyberHUDScene` (rotating SVG radar + scan beam), `HUDScene`, `SubtitleScene`, `TimedSubtitleScene` (Whisper JSON & `.srt`), `CompositeScene`, `TextScene`, `ImageScene`
 - **HUD Color Themes:** `emerald`, `amber`, `cyan`, `crimson`, `monochrome`
 - **Subtitle Styles:** `cinema` (frosted glass), `netflix` (clean drop shadow), `neon` (cyber glow), `cctv` (terminal monospace)
@@ -187,6 +197,7 @@ web-video-creator/
 │   └── AI_POST_PRODUCTION_GUIDE.md
 ├── examples/
 │   ├── cctv_ai_post_production.py
+│   ├── generate_showcase.py
 │   ├── project_example.json
 │   ├── demo.py
 │   └── sample.html

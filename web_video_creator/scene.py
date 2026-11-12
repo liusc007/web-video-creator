@@ -232,6 +232,7 @@ class HUDScene(Scene):
 
         html = f"""
         <div class="hud-container">
+          <div class="hud-vignette"></div>
           {grid_html}
           {scanlines_html}
           {brackets_html}
@@ -277,6 +278,18 @@ class HUDScene(Scene):
           flex-direction: column;
           justify-content: space-between;
           text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85), 0 0 8px {glow};
+        }}
+        .hud-vignette {{
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(5, 8, 12, 0.56) 0%,
+            rgba(5, 8, 12, 0.0) 18%,
+            rgba(5, 8, 12, 0.0) 82%,
+            rgba(5, 8, 12, 0.60) 100%
+          );
+          pointer-events: none;
         }}
         .hud-grid {{
           position: absolute;
@@ -537,9 +550,14 @@ class CyberHUDScene(HUDScene):
           position: absolute;
           right: 48px;
           bottom: 92px;
-          opacity: 0.78;
+          opacity: 0.9;
           pointer-events: none;
           z-index: 9;
+        }}
+        .cyber-radar svg {{
+          background: rgba(5, 8, 12, 0.62);
+          border-radius: 50%;
+          box-shadow: 0 0 16px {glow};
         }}
         .radar-ring {{
           fill: {bg_subtle};

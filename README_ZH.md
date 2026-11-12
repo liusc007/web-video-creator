@@ -13,6 +13,12 @@
 
 [English](README.md) · [简体中文](README_ZH.md) · [AI 视频后期实战指南](docs/AI_POST_PRODUCTION_GUIDE.md)
 
+<br/><br/>
+
+<img src="docs/assets/comparison-demo.gif" alt="AI 视频直出乱码对比 web-video-creator 三层代码化后期合成效果" width="100%" />
+
+<sub>由仓库内 <a href="examples/generate_showcase.py"><code>examples/generate_showcase.py</code></a> 直接调用 <code>HTMLToVideo</code>、<code>CCTVScene</code> 与 <code>TimedSubtitleScene</code> 渲染生成。</sub>
+
 </div>
 
 ---
@@ -95,6 +101,19 @@ wvc presets
 ### 2. Python API
 
 参考完整示例 [`examples/cctv_ai_post_production.py`](examples/cctv_ai_post_production.py)，支持自动探测底片分辨率（横屏 16:9 / 竖屏 9:16 / 4K 均自适应铺满）。
+
+---
+
+## 内置预设与视觉效果
+
+<p align="center">
+  <img src="docs/assets/presets-showcase.png" alt="内置图层预设效果：CCTVScene、CyberHUDScene、HUDScene 与逐词高亮字幕" width="100%" />
+</p>
+
+- **叠加图层场景：** `CCTVScene`、`CyberHUDScene`（旋转 SVG 雷达 + 扫描光束）、`HUDScene`、`SubtitleScene`、`TimedSubtitleScene`（支持 Whisper JSON 与 `.srt`）、`CompositeScene`、`TextScene`、`ImageScene`
+- **HUD 配色主题：** `emerald`（翡翠绿）、`amber`（琥珀金）、`cyan`（赛博青）、`crimson`（警示红）、`monochrome`（单色灰白）
+- **字幕样式：** `cinema`（电影毛玻璃）、`netflix`（干净投影无框）、`neon`（赛博霓虹）、`cctv`（监控等宽终端）
+- **空间声学预设：** `hall`、`cathedral`、`room`、`corridor`、`cctv_speaker`、`radio`、`none`
 
 ---
 
